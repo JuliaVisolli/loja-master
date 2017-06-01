@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.box-editar-produto{
+    width: 50%;
+    height: auto;
+}
+.btn-default.btn-editar-produto{
+    width: 40%;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #f9eee5;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.btn-default.btn-editar-saproduto:hover{
+    background-color: #9fdd87;
+    color: #fff;
+}

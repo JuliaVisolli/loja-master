@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>FoxTrot</title>
+    <meta name="description" content="Site de brinquedos">
+    <meta name="keywords" content="Site, Tutorial, Aplicativo, App">
+    <meta name="author" content="Julia Visolli, José Wagner">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo/LogoFoxtrot.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="header-index">
+        <div class="col-md-3">
+            <div class="img-logo">
+                <a href="index.html"> 
+                    <img class="img-responsive" src="img/logo/LogoFoxtrot.png">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="pesquisa">
+                <p>Bem-vindo a FoxTrot</p>
+                <div class="input-group"> 
+                    <input type="text" class="form-control inline-block" id="name">
+                    <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="login">
+                <div class="col-md-6">
+                    <div class="row">
+                        <a href="#">
+                            <div class="box-orange">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                            </div> 
+                            <p>Meus Pedidos</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <a href="login.html">
+                            <div class="box-orange">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div> 
+                            <p>Minha Conta</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                    <div class="box-carrinho">
+                        <a class="bloco-carrinho" href="#">
+                            <div class="box-orange">
+                                <i 
+                                    class="fa fa-shopping-cart" 
+                                        aria-hidden="true">
+                                </i>
+                            </div> 
+                            <p>Meu Carrinho</p>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <aside class="col-md-3">
+            <div class="container-collapse">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" href="#collapse1">Usuário</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="#">One</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" href="#collapse2">Produto</a>
+                          </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="#">One</a>
+                                </li>
+                            </ul>
+                        </div>                
+                    </div>
+                </div>
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" href="#collapse3">Categoria</a>
+                          </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="#">One</a>
+                                </li>
+                            </ul>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="carroussel" id="slidetopo">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="img-responsive" src="img/MulherMaravilha3.jpg" alt="First slide">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="img/tiger.jpg" alt="Second slide">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="img/Tiger1.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="icon-prev" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="icon-next" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

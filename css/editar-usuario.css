@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.box-editar-usuario{
+    width: 50%;
+    height: auto;
+}
+.btn-default.btn-produto-salvar{
+    width: 40%;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #f9eee5;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.btn-default.btn-produto-salvar:hover{
+    background-color: #9fdd87;
+    color: #fff;
+}
+.checkbox-ativo{
+    color: #30a19f;
+    font-family: "Love Ya Like A Sister";
+
+}
+
+input.check-user-ativo {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+@media (max-width: 1000px){
+    .form-page-white{
+        width: 100%;
+    }
+}

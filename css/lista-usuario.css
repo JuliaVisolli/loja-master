@@ -1,0 +1,29 @@
+/*inicio - lista usuario*/
+div.lista-usuario{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #178e8a;
+    margin-bottom: 80px;
+}
+.tit-lista-usuario{
+    font-family: 'Raleway', sans-serif;
+    color:#178e8a;
+    font-weight: bold;
+}
+a.a-lista-usuario{
+    color: #178e8a; 
+}
+.lista-usuario table tr{
+    height: 50px;    
+}
+a.usuario-dec{
+    text-decoration: none;
+}
+a.btn-editar.btn-editar-usuario,
+a.btn-editar.btn-excluir-usuario{
+    width: 88%;
+}
+table.list-user td{
+    color: #30a19f;
+}
+/*fim - lista usuario*/
