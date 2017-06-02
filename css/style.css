@@ -314,6 +314,9 @@ ul.menu-list-orange {
 .menu-list-orange li:hover a{
     color: #fff;
 }
+.footer-home{
+    margin-top: 80px;
+}
 /* fim - aside */
 
 /* helpers */

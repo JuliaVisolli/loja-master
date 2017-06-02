@@ -14,7 +14,7 @@ if(isset($msg)){
 ?>
 <div class="col-md-9">
 	<div class="pd-full-10">
-		<ul class="list-inline list-produtos">
+		<ul class="list-inline list-produtos mb-40">
 			<div class="box-btn-novo-produto">
 				<a class="btn-novo-produto" href="?acao=incluir">
 					+ Novo Produto
