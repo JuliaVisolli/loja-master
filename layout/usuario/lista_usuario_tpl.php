@@ -34,7 +34,7 @@ if(isset($msg)){
 		echo "	<tr>
 					<td>{$usuario['idUsuario']}</td>
 					<td>{$usuario['loginUsuario']}</td>
-					<td>{$usuario['nomeUsuario']}</td>
+					<td>".utf8_encode($usuario['nomeUsuario'])."</td>
 					<td>{$usuario['tipoPerfil']}</td>
 					<td>{$usuario['usuarioAtivo']}</td>
 					<td>

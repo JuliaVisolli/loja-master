@@ -75,7 +75,10 @@ if(isset($_REQUEST['acao'])){
 				extract($_POST);
 
 				//trata nome
-				$nome = preg_replace(	"/[^a-zA-Z0-9 ]+/",	"",	$nome);
+				$nome = str_replace('"','',$_POST['nome']);
+				$nome = str_replace("'",'',$nome);
+				$nome = str_replace(';','',$nome);
+				$nome = utf8_decode($nome);
 
 				if(odbc_exec($db, "	UPDATE
 										Produto
