@@ -122,9 +122,14 @@ if(isset($_REQUEST['acao'])){
 	//insere novo usuario
 	if(isset($_POST['btnNovoUsuario'])){
 		//trata nome
-		$nome = preg_replace(	"/[^a-zA-Z0-9 ]+/",
-								"",
-								$_POST['nome']);
+		$nome = str_replace('"','',$_POST['nome']);
+		$nome = str_replace("'",'',$nome);
+		$nome = str_replace(';','',$nome);
+		$nome = utf8_decode($nome);
+
+
+
+
 		//trata email
 		$email_exploded =
 		explode('@',$_POST['login']);

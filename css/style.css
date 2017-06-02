@@ -316,92 +316,6 @@ ul.menu-list-orange {
 }
 /* fim - aside */
 
-/* inicio - lista produtos - categoria - usuario */
-.box-produto{
-    border: 3px solid #178e8a;
-    padding: 20px;
-    border-radius: 3px;
-}
-ul.list-produtos li.item{
-    color: #30a19f;
-    border-radius: 2px;
-    margin-bottom: 20px;
-}
-.box-produto-img,
-.box-produto-descricao{
-    font-family: 'Raleway', sans-serif;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-.box-produto-descricao p{
-    word-break: break-word;
-}
-
-a.btn-novo-produto,
-a.btn-novo-usuario,
-a.btn-editar,
-a.btn-excluir{
-    font-family: "Love Ya Like A Sister";
-    border-radius: 3px;
-    color: #f9eee5;
-    text-align: center;
-    padding: 10px;
-    margin-top: 10px;
-    display: block;
-    font-weight: 600;
-}
-a.btn-editar,
-a.btn-excluir{
-    width: 100%;
-}
-a.btn-editar{
-    background-color: #30a19f;
-}
-a.btn-excluir{
-    background-color: #ff4d4d;
-}
-a.btn-novo-produto,
-a.btn-novo-usuario{
-    background-color: #75d151;
-    display: inline-block;
-    width: 18%;
-    text-decoration: none;
-}
-.box-btn-novo-produto,
-.box-btn-novo-usuario{
-    padding: 20px;
-    text-align: right;
-}
-a.btn-novo-produto:hover,
-a.btn-novo-usuario:hover {
-    background-color: #9fdd87;
-}
-a.btn-novo-produto:hover, a.btn-novo-usuario:hover {
-    text-decoration: none;
-    color: #fff;
-}
-a.btn-editar:hover,
-a.btn-excluir:hover{
-    text-decoration: none;
-    color: #fff;
-}
-a.btn-editar:hover{
-    background-color: #3dc0be;
-}
-a.btn-excluir:hover{
-    background-color: #fd2121;
-}
-.footer-home{
-    padding: 40px;
-    color: #fff;
-    border-top: 5px solid #f76f00;
-}
-
-
-
-/* fim - lista produtos - categoria - usuario */
-
 /* helpers */
 .hide{
     display: none;
@@ -423,6 +337,9 @@ a.btn-excluir:hover{
 }
 .mg-tb-40{
     margin: 40px 0;
+}
+.mb-40{
+    margin-bottom: 40px;
 }
 .bg-foxtrot{
     background-color: #30a19f;

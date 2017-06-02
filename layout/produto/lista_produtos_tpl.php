@@ -31,7 +31,7 @@ if(isset($msg)){
 								<div class='box-produto'>
 									<li class='item'>
 										<div class='box-produto-img'>
-											<img class="img-responsive" src="data:image/jpeg;base64,<?=base64_encode($produto['imagem'])?>"/>
+											<img class="img-responsive img-produto" src="data:image/jpeg;base64,<?=base64_encode($produto['imagem'])?>"/>
 										</div>
 										<div class='box-produto-descricao'>
 											<p>
@@ -42,12 +42,18 @@ if(isset($msg)){
 
 												<?php if(isset($produto['nomeProduto'])) : ?>
 													<strong>Produto: </strong>
+													<?= utf8_encode($produto['nomeProduto'])?>
 													<?=$produto['nomeProduto']?></br>
 												<?php endif; ?>
 
+
 												<?php if(isset($produto['descProduto'])) : ?>
-													<strong>Descrição: </strong>
-													<?=$produto['descProduto']?></br>
+													<div class="box-toggle">
+														<div class="tgl">
+															<?= utf8_encode($produto['descProduto'])?>
+															<?=$produto['descProduto']?></br>
+														</div>
+													</div>
 												<?php endif; ?>
 
 												<?php if(isset($produto['precProduto'])) : ?>
@@ -94,7 +100,7 @@ if(isset($msg)){
 				<?php
 					$i++;
 					if($i%3 == 0)
-						echo '<div class="clearfix"></div>';
+						echo '<div class="clearfix mb-40"></div>';
 				}
 			?>
 		<?php else : ?>
