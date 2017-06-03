@@ -126,6 +126,7 @@ if(isset($_REQUEST['acao'])){
 		$nome = str_replace("'",'',$nome);
 		$nome = str_replace(';','',$nome);
 		$nome = utf8_decode($nome);
+
 		//trata email
 		$email_exploded =
 		explode('@',$_POST['login']);
@@ -183,15 +184,5 @@ if(isset($_REQUEST['acao'])){
 	}
 	include('lista_usuario_tpl.php');
 }
-
-
-
-
-
-
-
-
-
-
 
 ?>

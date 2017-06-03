@@ -14,7 +14,7 @@ if(isset($msg)){
 ?>
 <div class="col-md-9">
 	<div class="pd-full-10">
-		<ul class="list-inline list-produtos">
+		<ul class="list-inline list-produtos mb-40">
 			<div class="box-btn-novo-produto">
 				<a class="btn-novo-produto" href="?acao=incluir">
 					+ Novo Produto
@@ -31,7 +31,7 @@ if(isset($msg)){
 								<div class='box-produto'>
 									<li class='item'>
 										<div class='box-produto-img'>
-											<img class="img-responsive" src="data:image/jpeg;base64,<?=base64_encode($produto['imagem'])?>"/>
+											<img class="img-responsive img-produto" src="data:image/jpeg;base64,<?=base64_encode($produto['imagem'])?>"/>
 										</div>
 										<div class='box-produto-descricao'>
 											<p>
@@ -42,16 +42,21 @@ if(isset($msg)){
 
 												<?php if(isset($produto['nomeProduto'])) : ?>
 													<strong>Produto: </strong>
-													<?=$produto['nomeProduto']?></br>
+													<?= utf8_encode($produto['nomeProduto'])?>
+													</br>
 												<?php endif; ?>
 
+
 												<?php if(isset($produto['descProduto'])) : ?>
-													<strong>Descrição: </strong>
-													<?=$produto['descProduto']?></br>
+													<div class="box-toggle">
+														<div class="tgl">
+															<?= utf8_encode($produto['descProduto'])?>
+															
+													</div>
 												<?php endif; ?>
 
 												<?php if(isset($produto['precProduto'])) : ?>
-													<strong>Preço: </strong>
+													<strong>Pre&ccedil;o: </strong>
 													<?=$produto['precProduto']?></br>
 												<?php endif; ?>
 
@@ -71,7 +76,7 @@ if(isset($msg)){
 												<?php endif; ?>
 
 												<?php if(isset($produto['idUsuario'])) : ?>
-													<strong>Usuário: </strong>
+													<strong>Usu&aacute;rio: </strong>
 													<?=$produto['idUsuario']?></br>
 												<?php endif; ?>
 
@@ -94,7 +99,7 @@ if(isset($msg)){
 				<?php
 					$i++;
 					if($i%3 == 0)
-						echo '<div class="clearfix"></div>';
+						echo '<div class="clearfix mb-40"></div>';
 				}
 			?>
 		<?php else : ?>

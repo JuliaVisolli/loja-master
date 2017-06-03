@@ -188,8 +188,8 @@ if(isset($_REQUEST['acao'])){
 								)
 							VALUES
 								(
-									'".$_POST['nome']."',
-									'".$_POST['descricao']."',
+									'".utf8_decode($_POST['nome'])."',
+									'".utf8_decode($_POST['descricao'])."',
 									".$_POST['preco'].",
 									'".$_POST['desconto']."',
 									'".$_POST['idCategoria']."',

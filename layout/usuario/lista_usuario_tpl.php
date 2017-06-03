@@ -19,7 +19,7 @@ if(isset($msg)){
 				</a>
 			</div>
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0;">
-<table class="list-user" cellpadding="0" cellspacing="0" border="0" align=center width="700" style="width: 700px;">
+<table class="list-user" cellpadding="0" cellspacing="0" border="0" align=center width="800" style="width: 800px;">
 	<tr>
 		<td class="tit-lista-usuario">ID Usu&aacute;rio</td>
 		<td class="tit-lista-usuario">Login</td>
